@@ -3,10 +3,8 @@
 **Adaptive, Evidence-Grounded Intelligence System for Software Incident Investigation**
 B.Tech Final Year Major Project · Department of Computer Engineering · ZHCET, AMU
 
-AEGIS investigates incidents in microservice applications. Python rules detect the errors, one LLM proposes
-up to three candidate root causes, and a separate Python verifier checks every hypothesis against the uploaded
-evidence before anything is reported. A hypothesis that passes is presented as an *evidence-supported possible
-root cause*, never as a confirmed diagnosis. AEGIS never changes or "fixes" any system.
+AEGIS is an LLM-powered microservices incident investigation system designed to assist engineers in identifying and explaining potential root causes of distributed application failures. It analyzes operational evidence from logs, metrics, distributed traces, and deployment records to generate candidate root-cause hypotheses, verify them against available evidence, and produce structured, evidence-backed incident reports. Featuring adaptive rule-based investigation strategies, evidence quality assessment, and hypothesis verification, AEGIS aims to make microservices Root Cause Analysis (RCA) more transparent, reliable, and explainable. The system is designed to distinguish between supported, contradicted, and inconclusive hypotheses rather than relying on unsupported AI-generated diagnoses.
+It investigates incidents in microservice applications. Python rules detect the errors, one LLM proposes up to three candidate root causes, and a separate Python verifier checks every hypothesis against the uploaded evidence before anything is reported. A hypothesis that passes is presented as an *evidence-supported possible root cause*, never as a confirmed diagnosis. AEGIS never changes or "fixes" any system.
 
 ---
 
