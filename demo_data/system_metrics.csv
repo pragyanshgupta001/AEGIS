@@ -1,0 +1,9 @@
+timestamp,service,cpu_percent,memory_percent,latency_ms,error_rate_percent,db_connection_pool_used_percent
+2026-10-14T09:55:00Z,order-service,34,58,120,0.5,42
+2026-10-14T10:00:00Z,order-service,36,59,135,0.7,45
+2026-10-14T10:04:00Z,order-service,39,61,1850,28.0,100
+2026-10-14T10:06:00Z,order-service,41,62,2200,36.0,100
+2026-10-14T10:10:00Z,order-service,38,62,2100,31.0,100
+2026-10-14T10:15:00Z,order-service,35,60,140,1.0,48
+2026-10-14T10:04:00Z,payment-service,22,44,180,0.0,20
+2026-10-14T10:06:00Z,api-gateway,28,51,1900,25.0,0

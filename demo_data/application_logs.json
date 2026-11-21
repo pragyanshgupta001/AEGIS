@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-10-14T10:00:02Z",
+    "level": "INFO",
+    "service": "api-gateway",
+    "request_id": "req-1001",
+    "message": "Incoming POST /orders"
+  },
+  {
+    "timestamp": "2026-10-14T10:00:02Z",
+    "level": "INFO",
+    "service": "order-service",
+    "request_id": "req-1001",
+    "message": "Order validation started"
+  },
+  {
+    "timestamp": "2026-10-14T10:00:03Z",
+    "level": "INFO",
+    "service": "inventory-service",
+    "request_id": "req-1001",
+    "message": "Inventory reservation successful"
+  },
+  {
+    "timestamp": "2026-10-14T10:00:04Z",
+    "level": "INFO",
+    "service": "payment-service",
+    "request_id": "req-1001",
+    "message": "Payment authorization successful"
+  },
+  {
+    "timestamp": "2026-10-14T10:00:05Z",
+    "level": "INFO",
+    "service": "order-service",
+    "request_id": "req-1001",
+    "message": "Order created successfully"
+  },
+  {
+    "timestamp": "2026-10-14T10:04:11Z",
+    "level": "INFO",
+    "service": "api-gateway",
+    "request_id": "req-1002",
+    "message": "Incoming POST /orders"
+  },
+  {
+    "timestamp": "2026-10-14T10:04:11Z",
+    "level": "INFO",
+    "service": "order-service",
+    "request_id": "req-1002",
+    "message": "Order validation started"
+  },
+  {
+    "timestamp": "2026-10-14T10:04:12Z",
+    "level": "ERROR",
+    "service": "order-service",
+    "request_id": "req-1002",
+    "error_code": "DB_CONN_TIMEOUT",
+    "message": "Database connection attempt timed out after 3000 ms",
+    "exception": "ConnectionTimeout: could not acquire connection from pool"
+  },
+  {
+    "timestamp": "2026-10-14T10:04:12Z",
+    "level": "WARN",
+    "service": "api-gateway",
+    "request_id": "req-1002",
+    "message": "Upstream service returned HTTP 503"
+  },
+  {
+    "timestamp": "2026-10-14T10:04:13Z",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "request_id": "req-1002",
+    "error_code": "ORDER_REQUEST_FAILED",
+    "message": "POST /orders failed with HTTP 503"
+  },
+  {
+    "timestamp": "2026-10-14T10:06:20Z",
+    "level": "INFO",
+    "service": "api-gateway",
+    "request_id": "req-1003",
+    "message": "Incoming POST /orders"
+  },
+  {
+    "timestamp": "2026-10-14T10:06:21Z",
+    "level": "ERROR",
+    "service": "order-service",
+    "request_id": "req-1003",
+    "error_code": "DB_CONN_TIMEOUT",
+    "message": "Database connection attempt timed out after 3000 ms",
+    "exception": "ConnectionTimeout: could not acquire connection from pool"
+  },
+  {
+    "timestamp": "2026-10-14T10:06:21Z",
+    "level": "WARN",
+    "service": "payment-service",
+    "request_id": "req-1003",
+    "message": "Payment request not initiated because order creation failed"
+  },
+  {
+    "timestamp": "2026-10-14T10:08:42Z",
+    "level": "INFO",
+    "service": "api-gateway",
+    "request_id": "req-1004",
+    "message": "Incoming GET /products"
+  },
+  {
+    "timestamp": "2026-10-14T10:08:42Z",
+    "level": "INFO",
+    "service": "product-service",
+    "request_id": "req-1004",
+    "message": "Product catalogue returned successfully"
+  },
+  {
+    "timestamp": "2026-10-14T10:12:00Z",
+    "level": "ERROR",
+    "service": "order-service",
+    "request_id": "req-1005",
+    "error_code": "DB_CONN_TIMEOUT",
+    "message": "Database connection attempt timed out after 3000 ms",
+    "exception": "ConnectionTimeout: could not acquire connection from pool"
+  },
+  {
+    "timestamp": "2026-10-14T10:15:00Z",
+    "level": "INFO",
+    "service": "order-service",
+    "request_id": "req-1006",
+    "message": "Health check completed"
+  }
+]
